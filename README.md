@@ -316,6 +316,18 @@ Transform the raw string with proper html format like break line to 'br tag', sp
 
 > Get error messages about validation failure.
 
+* readSingleton($tableName)
+
+> Read the only one row from the table.
+
+* updateSingleton($tableName)
+
+> Update the only one row from the table.
+
+* protect()
+
+> Protect the certain pages and ask users for name/password.
+
 ## Technical Detail
 * Manipulate the database with Redbeanphp 3.5
 
