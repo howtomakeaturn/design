@@ -55,10 +55,14 @@ class Outlaw{
         $this->validate = $config['rules'];
         
         $this->uploadPath = $config['upload_path'];                
-        $this->singletonData = $config['singleton_data'];
-        $this->authData = $config['auth'];
+        if (array_key_exists('singleton_data', $config)){ 
+            $this->singletonData = $config['singleton_data'];
+            $this->initializeSingletonData();
+        }
+        if (array_key_exists('auth', $config)){ 
+            $this->authData = $config['auth'];
+        }
         
-        $this->initializeSingletonData();
     }
     
     /*

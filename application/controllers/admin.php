@@ -10,7 +10,7 @@ class Admin extends CI_Controller {
         $this->load->helper('url');        
         $this->template->set_layout('basic');
 
-        $this->ol->protect();
+#        $this->ol->protect();
     }
 
     public function index(){

@@ -18,12 +18,12 @@ class Shop extends CI_Controller {
 
     public function create()
     {
-        $this->template->build('admin/create');
+        $this->template->build('shop/create');
     }
         
     function inject(){
-        if ( $this->ol->create('works') ){
-            redirect('/admin');          
+        if ( $this->ol->create('items') ){
+            redirect('/');          
         }
         else{
             exit(var_export($this->ol->getErrors()));

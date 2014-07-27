@@ -1,12 +1,10 @@
-<a href='/admin'>Back</a>
-<hr/>
-<form action='/admin/inject' method='post' enctype="multipart/form-data">
-    <p>連結網址<i>（請使用英文字母、數字、與減號）</i></p>
-    <input type='text' name='ol_url' class='form-control' required />
-    <p>連結名稱<i>（隨你打）</i></p>
+<form action='/shop/inject' method='post' enctype="multipart/form-data">
+    <p>Name</p>
     <input type='text' name='ol_name' class='form-control' required />
-    <p>作品</p>
+    <p>Description</p>
+    <textarea name='ol_description' class='form-control' rows=15 required /></textarea>
+    <p>Picture</p>
     <input type="file" name='ol_image' class='form-control' required />
     <hr/>
-    <p><input type='submit' value='create' /></p>
+    <p><input type='submit' value='Create' /></p>
 </form>
