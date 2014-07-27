@@ -264,9 +264,6 @@ Outlaw will render a simple view with input fields to ask users login.
     $this->ol->protect();
 ```
 
-## Reserved Words in html input name
-* ol_belong_*
-
 ## Helper Functions
 
 Outlaw is built-in with some global functions.
@@ -288,8 +285,8 @@ Transform the raw string with proper html format like break line to <br />, spac
  typography($string)
 ```
 
-
-
+## Reserved Words in html input name
+* ol_belong_*
 
 ## Design Principle
 * Type as less characters as possible.
