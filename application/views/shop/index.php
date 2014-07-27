@@ -7,9 +7,9 @@
 <div id="main-carousel" class="carousel slide carousel-margin" data-ride="carousel">
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-
+        <?php $counter = 0; ?>
         <?php foreach($items as $index => $item): ?>
-        <div class="item <?php if($index===1) echo 'active' ?>">
+        <div class="item <?php if($counter===0) {echo 'active'; $counter++;} ?>">
             <img src="/upload/<?php echo $item->image ?>">
             <div class="carousel-caption">
                 <?php echo $item->name ?>
