@@ -10,7 +10,7 @@ class Admin extends CI_Controller {
         $this->load->helper('url');        
         $this->template->set_layout('basic');
 
-#        $this->ol->protect();
+        $this->ol->protect();
     }
 
     public function index(){
@@ -34,7 +34,7 @@ class Admin extends CI_Controller {
     }
     
     function delete(){
-        $this->ol->delete('works', $this->input->post('id'));
+        $this->ol->delete('items', $this->input->post('id'));
         redirect('/admin');
     }
 
