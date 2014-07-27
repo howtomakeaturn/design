@@ -15,7 +15,7 @@ class Admin extends CI_Controller {
 
     public function index(){
       
-        $this->data['works'] = $this->ol->readAll('works');
+        $this->data['items'] = $this->ol->readAll('items');
         $this->template->build('admin/index', $this->data);
     }
 
@@ -25,8 +25,8 @@ class Admin extends CI_Controller {
     }
         
     function inject(){
-        if ( $id = $this->ol->create('works') ){
-            redirect('/admin/edit/' . $id);          
+        if ( $id = $this->ol->create('items') ){
+            redirect('/admin');
         }
         else{
             exit(var_export($this->ol->getErrors()));

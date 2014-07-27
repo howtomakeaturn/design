@@ -38,14 +38,9 @@
 |
 */
 
-$route['default_controller'] = "work";
+$route['default_controller'] = "shop";
 $route['404_override'] = '';
 
-$route['admin'] = "admin/index";
-$route['admin/(:any)'] = "admin/$1";
-$route['/'] = "work/index"; 
-$route['contact'] = "work/contact"; 
-$route['(:any)'] = "work/view/$1"; 
 
 
 /* End of file routes.php */
