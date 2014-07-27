@@ -280,7 +280,7 @@ Check the content of variables. Debugging purpose.
 ```php
 look($v)
 ```
-Transform the raw string with proper html format like break line to <br />, space to '&nsbp'.. and etc.
+Transform the raw string with proper html format like break line to '<br />' space to '&nsbp'.. and etc.
 ```php
  typography($string)
 ```
