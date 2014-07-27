@@ -245,8 +245,51 @@ And update the singleton data with the same rules for basic CRUD operations with
     $this->ol->updateSingleton('site')
 ```
 
+## User Authentication
+Sometimes we just want to have a simple and fast way to protect certian. 
+
+We don't want to implement password hash procedure, member system and even the views for login and register since there's even only one admin user will need to login the application!
+
+Set the 'auth' with user name and password:
+``php
+$config['auth'] = array(
+    'user' => 'kelly',
+    'password' => 'kelly123'
+);
+```
+And call the **protect** method in the pages you want to protect.
+Outlaw will render a simple view with input fields to ask users login.
+
+``php
+    $this->ol->protect();
+```
+
 ## Reserved Words in html input name
 * ol_belong_*
+
+## Helper Functions
+
+Outlaw is built-in with some global functions.
+
+Create a html button to allow sending http POST requests.
+```php
+button_to($html_class, $url, $data, $label, $confirm_msg)
+```
+Create a html hidden input. Just to type less characters.
+```php
+hidden($name, $value)
+```
+Check the content of variables. Debugging purpose.
+```php
+look($v)
+```
+Transform the raw string with proper html format like break line to <br />, space to '&nsbp'.. and etc.
+```php
+ typography($string)
+```
+
+
+
 
 ## Design Principle
 * Type as less characters as possible.
