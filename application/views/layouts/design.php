@@ -58,8 +58,8 @@
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="./">關於Itees</a></li>
-              <li><a href="../navbar-static-top/">使用規則</a></li>
+              <li><a href="/shop/create">關於Itees</a></li>
+              <li><a href="/shop/create">使用規則</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->

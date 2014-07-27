@@ -1,7 +1,7 @@
 <ul class="nav nav-tabs layout-tabs" role="tablist">
-  <li><a href="#">開始設計</a></li>
-  <li><a href="#">設計師款</a></li>
-  <li><a href="#">如何設計</a></li>
+  <li><a href="/shop/create">開始設計</a></li>
+  <li><a href="/shop/create">設計師款</a></li>
+  <li><a href="/shop/create">如何設計</a></li>
   <li><a href="/shop/create">上傳作品</a></li>
 </ul>
 <div id="main-carousel" class="carousel slide carousel-margin" data-ride="carousel">
