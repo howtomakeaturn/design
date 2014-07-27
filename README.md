@@ -218,8 +218,11 @@ And the usage becomes:
 ## Singleton Data
 
 Sometimes we need tables that will always have only one row in it.
+
 For example, contact information, website settings, and etc.
+
 We don't really need CRUD for this since we will never delete it or insert new row.
+
 Outlaw solve this with singleton data:
 
 In config file, set the table structure and default value:
@@ -233,6 +236,7 @@ $config['singleton_data'] = array(
 );
 ```
 Outlaw will create the table and insert the row with default value while initializing.
+
 You can get the singleton data with **readSingleton** method:
 
 ```php
