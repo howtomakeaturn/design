@@ -251,7 +251,7 @@ Sometimes we just want to have a simple and fast way to protect certian.
 We don't want to implement password hash procedure, member system and even the views for login and register since there's even only one admin user will need to login the application!
 
 Set the 'auth' with user name and password:
-``php
+```php
 $config['auth'] = array(
     'user' => 'kelly',
     'password' => 'kelly123'
